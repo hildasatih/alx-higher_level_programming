@@ -7,5 +7,5 @@ def safe_print_integer_err(value):
         print("{:d}".format(integer_value))
         return True
     except (ValueError, TypeError):
-        sys.stderr.write("Exception: provide an integer.\n")
+        sys.stderr.write("Exception: You must provide an integer value\n")
         return False
